@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Workspace Portal</title>
+    
+    <style>
+        /* Ensures the container takes up 100% of the visible area */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+            background-color: #111; /* Darker background for a cleaner transition */
+            display: flex;
+        }
+
+        iframe {
+            flex-grow: 1;
+            border: none;
+            width: 100%;
+            height: 100%;
+            /* Optimized for mobile touch interaction */
+            -webkit-overflow-scrolling: touch; 
+        }
+
+        /* Screen reader only class for accessibility */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="sr-only">Game Hub Portal</h1>
+
+    <iframe 
+        src="https://7x.games/" 
+        title="Gaming Interface"
+        allow="fullscreen; autoplay; gamepad; pointer-lock; clipboard-write"
+        loading="eager">
+        <p>Your browser does not support iframes. 
+           <a href="https://7x.games/">Visit the site here.</a>
+        </p>
+    </iframe>
+
+</body>
+</html>
